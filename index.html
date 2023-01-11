@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <meta name="description" content="">
+    <link rel="stylesheet" type="text/css" href="assets/css/app.min.css">
+</head>
+<body class="page">
+        <header class="header">
+  <div class="container">
+    <div class="header__row">
+      <a href="./index.html" class="header__logo"
+        ><img src="./assets/img/logo.png" alt="logo"
+      /></a>
+      <nav class="nav">
+        <div class="login-form">
+          <button class="login-form__enter button" data-path="enter">Вход</button>
+          <button class="login-form__register button" data-path="register">Регистрация</button>
+        </div>
+      </nav>
+
+      <div class="burger">
+        <span class="burger__line burger__line--1"></span>
+        <span class="burger__line burger__line--2"></span>
+        <span class="burger__line burger__line--3"></span>
+        <span class="burger__line burger__line--4"></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="modals">
+    <div class="modals__overlay">
+      <div class="modal modal--log-in" data-target="enter">
+        <strong class="modal__name">Вход</strong>
+        <form class="modal__form">
+          <input
+            class="modal__input modal__input--tel"
+            type="text"
+           
+            placeholder="Телефон"
+          />
+          <input
+            class="modal__input modal__input--password"
+            type="password"
+           
+            placeholder="Пароль"
+          />
+        </form>
+        <button class="modal__btn">Войти</button>
+        <img src="./assets/img/modal-close.png" alt="" class="modal__close" />
+      </div>
+      <div class="modal modal--register" data-target="register">
+        <strong class="modal__name">Регистрация</strong>
+        <form  class="modal__form">
+          <input type="tel"
+          class="modal__input"
+          placeholder="Телефон">
+          <input type="text"
+          class="modal__input"
+          placeholder="Электронная почта">
+          <input type="password"
+          class="modal__input"
+          placeholder="Пароль">
+          <input type="password"
+          class="modal__input"
+          placeholder="Повторите пароль">
+        </form>
+        <button class="modal__btn">Войти</button>
+        <img src="./assets/img/modal-close.png" alt="" class="modal__close" />
+   
+      </div>
+    </div>
+  </div>
+</header>
+
+        
+        <main>
+    
+            
+            
+    
+<section class="hero">
+  <div class="container">
+    <div class="hero__row">
+      <div class="hero__content">
+        <h1 class="hero__title"><span>Telegram чат</span> на вашем сайте</h1>
+        <p class="hero__description">
+          Общение с клиентами станет простым и удобным, а подключение займет 5
+          минут. Первый месяц — <span>бесплатно!</span>
+        </p>
+        <a href="" class="hero__btn button">Подключить</a>
+      </div>
+      <img
+        src="./assets/img/hero-bg.png"
+        alt="hero-background-img"
+        class="hero__bg"
+      />
+    </div>
+  </div>
+</section>
+
+<section class="about">
+  <div class="container">
+    <div class="about__row">
+      <div class="about__content">
+        <h2 class="about__title title">Tocha Online — это</h2>
+        <ul class="about__menu-list">
+          <li class="about__menu-item">
+            <div class="about__menu-img">
+              <svg class="about__menu-icon">
+                <use href="./assets/img/sprite.svg#about-icon-01"></use>
+              </svg>
+            </div>
+
+            <div class="about__menu-content">
+              <h3>Ничего лишнего</h3>
+              <p>
+                Отсутствие лишних приложений для операторов. Оператору не нужно
+                учиться работать с чатом
+              </p>
+            </div>
+          </li>
+
+          <li class="about__menu-item">
+            <div class="about__menu-img">
+              <svg class="about__menu-icon">
+                <use href="./assets/img/sprite.svg#about-icon-02"></use>
+              </svg>
+            </div>
+            <div class="about__menu-content">
+              <h3>Простота</h3>
+              <p>Простая установка на сайт</p>
+            </div>
+          </li>
+
+          <li class="about__menu-item">
+            <div class="about__menu-img">
+              <svg class="about__menu-icon">
+                <use href="./assets/img/sprite.svg#about-icon-03"></use>
+              </svg>
+            </div>
+            <div class="about__menu-content">
+              <h3>Несколько ассистентов</h3>
+              <p>Возможность подключения нескольких ассистентов</p>
+            </div>
+          </li>
+
+          <li class="about__menu-item">
+            <div class="about__menu-img">
+              <svg class="about__menu-icon">
+                <use href="./assets/img/sprite.svg#about-icon-04"></use>
+              </svg>
+            </div>
+            <div class="about__menu-content">
+              <h3>Кастомизация</h3>
+              <p>Настройка интерфейса под нужды сайта</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <picture class="about__bg">
+        <img src="./assets/img/about-bg.png" alt="" />
+        <source
+          media="(max-width:768px )"
+          srcset="./assets/img/about-bg-min.png"
+        />
+      </picture>
+    </div>
+  </div>
+</section>
+
+<section class="tariffs">
+  <div class="container">
+    <h2 class="tariffs__title title">Тарифы</h2>
+    <p class="tariffs__description">Стоимость зависит от трафика сайта</p>
+
+    <ul class="tariffs__menu-list">
+      <li class="tariffs__menu-item">
+        <strong>Бесплатно</strong>
+        <p>Пробный период на 1 месяц</p>
+        <span>0₽/первый месяц</span>
+        <a href="" class="tariffs__btn button">Подключить за 0₽</a>
+      </li>
+
+      <li class="tariffs__menu-item">
+        <strong>Базовый</strong>
+        <p>Менее 1000 посещений в сутки</p>
+        <span>200₽/месяц</span>
+        <a href="" class="tariffs__btn button">Подключить за 200₽</a>
+      </li>
+
+      <li class="tariffs__menu-item">
+        <strong>Премиум</strong>
+        <p>Более 1000 посещений в сутки</p>
+        <span>500₽/месяц</span>
+        <a href="" class="tariffs__btn button">Подключить за 500₽</a>
+      </li>
+    </ul>
+    
+    <div class="swiper tariffs-slider">
+      <div class="swiper-wrapper tariffs-slider__wrapper">
+        <div class="swiper-slide tariffs-slider__slide">
+          <strong>Бесплатно</strong>
+          <p>Пробный период на 1 месяц</p>
+          <span>0₽/первый месяц</span>
+          <a href="" class="tariffs__btn button">Подключить за 0₽</a>
+        </div>
+        <div class="swiper-slide tariffs-slider__slide">
+          <strong>Базовый</strong>
+          <p>Менее 1000 посещений в сутки</p>
+          <span>200₽/месяц</span>
+          <a href="" class="tariffs__btn button">Подключить за 200₽</a>
+        </div>
+        <div class="swiper-slide tariffs-slider__slide">
+          <strong>Премиум</strong>
+          <p>Более 1000 посещений в сутки</p>
+          <span>500₽/месяц</span>
+          <a href="" class="tariffs__btn button">Подключить за 500₽</a>
+        </div>
+      </div>
+
+      <div class="swiper-pagination tariffs-slider__pagination"></div>
+
+    </div>
+  </div>
+</section>
+
+<section class="steps">
+  <div class="container">
+    <h2 class="steps__title title">
+      Всего 3 шага для подключения Telegram чата
+    </h2>
+    <ul class="steps__menu-list">
+      <li class="steps__menu-item">
+        <span class="steps__menu-number">1</span>
+        <h4 class="steps__menu-name">Telegram bot</h4>
+        <p class="steps__menu-description">
+          Вы создаёте Telegram бота для вашего сайта
+        </p>
+
+        <img class="steps__menu-img" src="./assets/img/steps-01.png" alt="" />
+      </li>
+
+      <li class="steps__menu-item">
+        <span class="steps__menu-number">2</span>
+        <h4 class="steps__menu-name">Подключение Tocha</h4>
+        <p class="steps__menu-description">
+          Tocha подключает Telegram бота к вашиму сайту
+        </p>
+        <img class="steps__menu-img" src="./assets/img/steps-02.png" alt="" />
+      </li>
+
+      <li class="steps__menu-item">
+        <span class="steps__menu-number">3</span>
+        <h4 class="steps__menu-name">Telegram-чат</h4>
+        <p class="steps__menu-description">
+          Консультант отвечает на вопросы посетителей сайта
+        </p>
+        <img class="steps__menu-img" src="./assets/img/steps-03.png" alt="" />
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="reviews">
+  <div class="container">
+    <h2 class="reviews__title title">Отзывы клиентов</h2>
+    <div class="swiper slider">
+      <div class="swiper-wrapper slider__wrapper">
+        <div class="swiper-slide slider__slide">
+          <strong>Как же удобно!</strong>
+          <p class="slider__description">
+            В рамках спецификации современных стандартов, базовые сценарии
+            поведения пользователей, которые представляют собой яркий пример
+            континентально-европейского типа политической культуры, будут
+            преданы социально-демократической анафеме.
+          </p>
+          <div class="user">
+            <img class="user__avatar" src="./assets/img/avatar-01.jpg" alt="" />
+            <div class="user__content">
+              <h4 class="user__name">Анна Купер</h4>
+              <span class="user__info">romashka.ru</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide slider__slide">
+          <strong>Теперь мы идем в ногу со временем</strong>
+          <p class="slider__description">
+            А ещё интерактивные прототипы превращены в посмешище, хотя само их
+            существование приносит несомненную пользу обществу. Банальные, но
+            неопровержимые выводы, а также тщательные исследования конкурентов
+            формируют сеть.
+          </p>
+          <div class="user">
+            <img class="user__avatar" src="./assets/img/avatar-02.jpg" alt="" />
+            <div class="user__content">
+              <h4 class="user__name">Андрей Васильев</h4>
+              <span class="user__info">samogon-ont.ru</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide slider__slide">
+          <strong>Теперь мы идем в ногу со временем</strong>
+          <p class="slider__description">
+            А ещё интерактивные прототипы превращены в посмешище, хотя само их
+            существование приносит несомненную пользу обществу. Банальные, но
+            неопровержимые выводы, а также тщательные исследования конкурентов
+            формируют сеть.
+          </p>
+          <div class="user">
+            <img class="user__avatar" src="./assets/img/avatar-02.jpg" alt="" />
+            <div class="user__content">
+              <h4 class="user__name">Андрей Васильев</h4>
+              <span class="user__info">samogon-ont.ru</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide slider__slide">
+          <strong>Теперь мы идем в ногу со временем</strong>
+          <p class="slider__description">
+            А ещё интерактивные прототипы превращены в посмешище, хотя само их
+            существование приносит несомненную пользу обществу. Банальные, но
+            неопровержимые выводы, а также тщательные исследования конкурентов
+            формируют сеть.
+          </p>
+          <div class="user">
+            <img class="user__avatar" src="./assets/img/avatar-02.jpg" alt="" />
+            <div class="user__content">
+              <h4 class="user__name">Андрей Васильев</h4>
+              <span class="user__info">samogon-ont.ru</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide slider__slide">
+          <strong>Теперь мы идем в ногу со временем</strong>
+          <p class="slider__description">
+            А ещё интерактивные прототипы превращены в посмешище, хотя само их
+            существование приносит несомненную пользу обществу. Банальные, но
+            неопровержимые выводы, а также тщательные исследования конкурентов
+            формируют сеть.
+          </p>
+          <div class="user">
+            <img class="user__avatar" src="./assets/img/avatar-02.jpg" alt="" />
+            <div class="user__content">
+              <h4 class="user__name">Андрей Васильев</h4>
+              <span class="user__info">samogon-ont.ru</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide slider__slide">
+          <strong>Теперь мы идем в ногу со временем</strong>
+          <p class="slider__description">
+            А ещё интерактивные прототипы превращены в посмешище, хотя само их
+            существование приносит несомненную пользу обществу. Банальные, но
+            неопровержимые выводы, а также тщательные исследования конкурентов
+            формируют сеть. А ещё интерактивные прототипы превращены в
+            посмешище, хотя само их существование приносит несомненную пользу
+            обществу. Банальные, но неопровержимые выводы, а также тщательные
+            исследования конкурентов формируют сеть.
+          </p>
+          <div class="user">
+            <img class="user__avatar" src="./assets/img/avatar-02.jpg" alt="" />
+            <div class="user__content">
+              <h4 class="user__name">Андрей Васильев</h4>
+              <span class="user__info">samogon-ont.ru</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide slider__slide">
+          <strong>Теперь мы идем в ногу со временем</strong>
+          <p class="slider__description">
+            А ещё интерактивные прототипы превращены в посмешище, хотя само их
+            существование приносит несомненную пользу обществу. Банальные, но
+            неопровержимые выводы, а также тщательные исследования конкурентов
+            формируют сеть.
+          </p>
+          <div class="user">
+            <img class="user__avatar" src="./assets/img/avatar-02.jpg" alt="" />
+            <div class="user__content">
+              <h4 class="user__name">Андрей Васильев</h4>
+              <span class="user__info">samogon-ont.ru</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-pagination slider__pagination"></div>
+    </div>
+
+    <div class="banner">
+      <img class="banner__img" src="./assets/img/banner.png" alt="banner-img" />
+      <div class="banner__content">
+        <h3>Подключите Telegram чат уже сегодня</h3>
+        <div class="banner__form">
+          <input
+            class="banner__input"
+            placeholder="Введите e-mail"
+            type="text"
+          />
+          <button class="banner__btn" type="submit">Отправить</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+        </main>
+
+        <footer class="footer">
+  <div class="container">
+    <div class="footer__row">
+      <div class="footer__column">
+        <a class="footer__logo" href="./index.html">
+          <img src="./assets/img/footer-logo.png" alt="" />
+        </a>
+      </div>
+
+      <div class="footer__column">
+        <strong>Telegram чат</strong>
+        <ul class="footer__menu-list">
+          <li class="footer__menu-item">
+            <a href="#" class="footer__menu-link">О нас</a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="#" class="footer__menu-link">Партнеры</a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="#" class="footer__menu-link">Инструкция</a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="#" class="footer__menu-link">Цены</a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="#" class="footer__menu-link">Контакты</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__column">
+        <strong>Поддержка</strong>
+        <ul class="footer__menu-list">
+          <li class="footer__menu-item">
+            <a href="#" class="footer__menu-link">Центр поддержки</a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="#" class="footer__menu-link"
+              >Политика конфеденциальности</a
+            >
+          </li>
+          <li class="footer__menu-item">
+            <a href="#" class="footer__menu-link">Документы оферта</a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="#" class="footer__menu-link">Документы оферта</a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="#" class="footer__menu-link">Статус</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer__copyright">
+    <div class="container">© 2021 Tocha. Все права защищены</div>
+  </div>
+</footer>
+
+    </div>
+    <script src="assets/js/app.min.js"></script>
+</body>
+</html>
